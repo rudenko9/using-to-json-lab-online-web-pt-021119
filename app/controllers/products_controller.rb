@@ -33,7 +33,7 @@ end
   def data
     product = Product.find(params[:id])
     render json: ProductSerializer.serialize(product)
-    #render json: post.to_json
+  
   end
 
   private
